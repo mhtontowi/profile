@@ -28,3 +28,4 @@ Do these in this order, so nobody else can claim the domain on GitHub:
 Source: [GitHub Docs, managing a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 Your email (MX, SPF, DKIM, DMARC records) is separate from these records. Your email provider gives you those.
+# profile
