@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<title>Driftline</title>
+<meta name="description" content="Driftline is a GitHub Action that runs your prompts on the replacement model before an AI model is retired, and shows what changed.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="home" href="../">mirza tontowi</a>
+    <span class="meta" style="font-family:var(--f-mono);font-size:13px;color:var(--muted)">Launching late October 2026</span>
+  </div>
+  <header style="margin-bottom:48px">
+    <h1>Driftline</h1>
+    <p class="lead" style="max-width:40ch">See how your prompts change before an AI model is retired.</p>
+  </header>
+  <section>
+    <h2>The problem</h2>
+    <div class="prose">
+      <p>AI providers retire models on a schedule. Anything with a model name written into its code stops working on that date. Swapping the name is easy. Knowing whether the replacement still returns valid JSON, keeps the same tone and refuses the same things is not.</p>
+    </div>
+  </section>
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Scan.</strong> Finds model IDs from OpenAI, Anthropic and Google in your code and config files.</li>
+      <li><strong>Check.</strong> Compares them against announced retirement dates and recommended replacements.</li>
+      <li><strong>Test.</strong> Runs the prompts you list in <code>.driftline/prompts.yml</code> on both the current and the replacement model.</li>
+      <li><strong>Report.</strong> Opens a GitHub issue with a side-by-side comparison, 90 days before retirement.</li>
+    </ol>
+    <p class="note" style="margin-top:16px">It runs in your own CI with your own API keys. Your keys and prompts never leave your pipeline.</p>
+  </section>
+  <section>
+    <h2>Pricing</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Plan</th><th>Price</th><th>Includes</th></tr></thead>
+        <tbody>
+          <tr><td>Free</td><td>$0</td><td>Scan and retirement warnings, 1 repo</td></tr>
+          <tr><td>Pro</td><td>$19/month or $190/year</td><td>Drift tests, weekly alerts, up to 10 repos</td></tr>
+          <tr><td>Team</td><td>$49/month or $490/year</td><td>Unlimited repos, drift history, priority support</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Join the beta</h2>
+    <p>Email me and I'll send you the install link before launch.</p>
+    <a class="email" data-email href="#">mirza@YOUR-DOMAIN.com</a>
+  </section>
+  <footer><span>Built by <a href="../">Mirza Tontowi</a></span><a href="../impressum.html">Contact &amp; imprint</a></footer>
+</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>
